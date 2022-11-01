@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <script src="{{asset('js/jquery-3.6.1.js')}}"></script>
-    <title>Mi Escuela App</title>
+    <title>BonIce</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,10 +20,7 @@
         <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="{{url('/registrar')}}">Registrar</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,7 +45,7 @@
     </div>
     <footer>
         <hr>
-        <div align = "center">BonIce &copy; 2022</div>
+        <div align="center">BonIce &copy; 2022</div>
     
     </footer>
     <script src="{{asset('js/bootstrap.js')}}"></script>

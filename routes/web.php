@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\registrarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/registrar', function () {
-    return view('registrar');
-});
+
+Route::get('/registrar', [registrarController::class, 'registrar']);
+
