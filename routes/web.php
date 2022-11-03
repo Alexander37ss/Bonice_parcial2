@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registrarController;
+use App\Http\Controllers\UsuarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/registrar', [registrarController::class, 'registrar']);
+Route::get('/consultar', [registrarController::class, 'consultar']);
+Route::get('/usuario/registrar', [UsuarioController::class, 'registrar']);
 
